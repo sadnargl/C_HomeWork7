@@ -1,11 +1,39 @@
-﻿int x1 = InputFigureFromConsole ("Введите первое число: ");
-int x2 = InputFigureFromConsole ("Введите второе число: ");
-long res = x1;
-for (int j = 1; j <= x2-1; j++)
+﻿int FirstDimension = InputFigureFromConsole ("Введите первое измерение массива: ");
+int SecondDimension = InputFigureFromConsole ("Введите второе измерение массива: ");
+if (FirstDimension == -1 | SecondDimension == -1)
+    { 
+    Console.WriteLine ("Число введено с ошибкой");
+    System.Environment.Exit (0);
+    }
+Double [,] result = RandomFeelTwoDimensionsArray (FirstDimension,SecondDimension);
+PrintArray (result);
+
+Double [,] RandomFeelTwoDimensionsArray (int FirstLength, int SecondLength)
 {
-    res = res * x1;
+    Double [,] Array = new Double [FirstLength,SecondLength];
+    Random rnd = new Random ();
+    for (int i = 0; i < Array.GetLength(0); i++)
+    {
+       for (int j = 0; j < Array.GetLength(1); j++)
+       {
+        Array [i,j]= Math.Round(rnd.NextDouble ()*10, 2);
+       } 
+    }
+    return Array;
 }
-Console.WriteLine ($"{x1} в степени {x2} равняется {res}");
+
+void PrintArray (double [,] Array)
+{
+
+    for (int i = 0; i < Array.GetLength(0); i++)
+    {
+        for (int j = 0; j < Array.GetLength(1); j++)
+        {
+          Console.Write ($"{Array [i,j]} ");  
+        }
+        Console.WriteLine ();
+    }
+}
 
 int InputFigureFromConsole (string invitation)
 {
@@ -16,7 +44,6 @@ int InputFigureFromConsole (string invitation)
         Console.WriteLine ("Ошибка ввода числа");
         Console.Write (invitation);
     }
-    return i;
+    if (i>=1) {return i;} else {return -1;}
 }
-
 

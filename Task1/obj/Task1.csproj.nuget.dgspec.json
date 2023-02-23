@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика4\\Task1\\Task1.csproj": {}
+    "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика7\\Task1\\Task1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика4\\Task1\\Task1.csproj": {
+    "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика7\\Task1\\Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика4\\Task1\\Task1.csproj",
+        "projectUniqueName": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика7\\Task1\\Task1.csproj",
         "projectName": "Task1",
-        "projectPath": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика4\\Task1\\Task1.csproj",
+        "projectPath": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика7\\Task1\\Task1.csproj",
         "packagesPath": "C:\\Users\\sadna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика4\\Task1\\obj\\",
+        "outputPath": "C:\\Users\\sadna\\Documents\\Курс питон\\С_Шарп\\Практика7\\Task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sadna\\AppData\\Roaming\\NuGet\\NuGet.Config"
